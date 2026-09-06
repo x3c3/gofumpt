@@ -44,8 +44,6 @@ exec gofumpt -d -extra foo.go.golden-extra
 env GOBIN=${WORK}/bin
 env GOFUMPT_PUBLISHED_VERSION=v0.8.1-0.20250831111522-b5fd2eb6e821
 
-# TODO: update these once the library fix hits master
-
 # gofumpt as the main binary with a real module version.
 go install mvdan.cc/gofumpt@${GOFUMPT_PUBLISHED_VERSION}
 exec ${GOBIN}/gofumpt foo.go
